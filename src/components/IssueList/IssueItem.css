@@ -1,0 +1,15 @@
+.issue-item {
+  border-bottom: 1px solid #dadce0;
+  box-sizing: border-box;
+  padding: 16px;
+  word-break: break-word;
+}
+
+.issue-item_title {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.issue-item_description {
+  margin-top: 8px;
+}

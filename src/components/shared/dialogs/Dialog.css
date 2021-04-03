@@ -1,0 +1,41 @@
+.dialog-wrapper {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.dialog {
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dialog_title {
+  font-weight: 500;
+  margin: 0;
+  padding: 16px 24px;
+}
+
+.dialog_content {
+  padding: 8px 24px;
+  flex-grow: 1;
+}
+
+.dialog_actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 24px;
+}
+
+.cancel {
+  margin-right: 8px;
+}

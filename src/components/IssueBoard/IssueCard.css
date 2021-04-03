@@ -1,0 +1,29 @@
+.issue-card {
+  background: white;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 128px;
+  padding: 16px;
+}
+
+.issue-card:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+.issue-card_title {
+  font-weight: 600;
+  -webkit-line-clamp: 2;
+}
+
+.issue-card_description {
+  margin-top: 8px;
+  -webkit-line-clamp: 3;
+}

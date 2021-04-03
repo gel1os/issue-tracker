@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --header-height: 64px;
+}
+
+header {
+  align-items: center;
+  background: #f1f3f4;
+  border-bottom: 1px solid #dadce0;
+  box-sizing: border-box;
+  display: flex;
+  height: var(--header-height);
+  justify-content: space-between;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+header h2 {
+  margin: 0;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header ul li:not(:last-child) {
+  margin-right: 8px;
+}
+
+header ul li.active button {
+  pointer-events: none;
+}
+
+li.active button,
+header ul button:not([disabled]):hover,
+header ul button:not([disabled]):focus {
+  background: white;
+  border-color: #dadce0;
+  outline: none;
+}
+
+header ul li button {
+  border-color: transparent;
+}
+
+button {
+  background: none;
+  border: 1px solid rgb(118,118,118);
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+button[disabled] {
+  border-color: transparent;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1028px;
+}
+
+input, textarea, select, button {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 16px;
+}
+
+input, textarea {
+  padding: 6px;
+}
+
+select {
+  height: 32px;
+  padding: 4px;
+}
+
+input[type="checkbox"]:not([disabled]),
+button:not([disabled]) {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+
+[draggable] {
+  cursor: grab;
+}
+
+[draggable]:active {
+  cursor: grabbing;
+}

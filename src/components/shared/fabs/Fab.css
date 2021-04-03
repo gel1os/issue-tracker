@@ -1,0 +1,19 @@
+.fab {
+  background: #2196f3;
+  bottom: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  height: 52px;
+  position: fixed;
+  right: 24px;
+  width: 52px;
+  z-index: 1;
+}
+
+.fab svg {
+  fill: white;
+  height: 32px;
+  padding: 10px;
+  width: 32px;
+}
